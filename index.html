@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Машинка</title>
+</head>
+<body>
+    <div class="car">
+        <div class="window1"></div>
+        <div class="wheel left"></div>
+        <div class="wheel right"></div>
+      </div>
+      <style>
+        body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./IMAGE\ 2023-12-18\ 10:54:56.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+  
+  @keyframes moveCar {
+    from {
+      left: 0px;
+    }
+  
+    to {
+      left: calc(100% - 250px);
+      
+    }
+  }
+  
+  @keyframes movie {
+    from {
+      left: 0px;
+    }
+  
+    to {
+      left: calc(100% - 250px);
+    }
+  }
+  .car {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(153, 0, 255);
+    position: absolute;
+    z-index: 3;
+    left: -200px;
+    top: 500px;
+    animation: moveCar 5s forwards;
+    border-radius: 0px 100px 50px 0px;
+  }
+  
+  .wheel {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+  }
+  .left {
+    left: 46px;
+    top: 70px;
+  }
+  
+  .right {
+    right: 25px;
+    top: 70px;
+  }
+  
+  .window1 {
+    width: 100px;
+    height: 20px;
+    background-color: #efe9e9;
+    z-index: 4;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    border-radius: 0px 45px 0px 0px;
+  }
+      </style>
+</body>
+</html>
